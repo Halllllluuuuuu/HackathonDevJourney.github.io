@@ -3,49 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Specialist Training</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Basketball for People with Disabilities</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f0f8ff, #e0ffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #4CAF50, #3b8d40);
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            border-radius: 25px;
+            margin: 15px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .info-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .info-section img {
+            max-width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .info-section img:hover {
+            transform: scale(1.05);
+        }
+        .info-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .info-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        .footer {
+            background: linear-gradient(to right, #4CAF50, #3b8d40);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+        }
+        .symbol {
+            font-size: 2.5em;
+            color: #4CAF50;
+            padding: 15px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .flex-container > div {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>IT Specialist Training</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Basketball for People with Disabilities</h1>
     </header>
-    <main>
-        <section class="hero">
-            <h2>Welcome to Your IT Specialist Journey</h2>
-            <p>Explore our comprehensive courses to become a certified IT Specialist.</p>
-            <a href="courses.html" class="cta-button">Get Started</a>
-        </section>
-        <section class="courses-preview">
-            <h2>Our Courses</h2>
-            <div class="course-card">
-                <h3>Introduction to IT <i class="fas fa-desktop"></i></h3>
-                <p>Learn the basics of Information Technology.</p>
-                <a href="course-intro-to-it.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+
+    <div class="container">
+        <div class="info-section">
+            <h2>Overview</h2>
+            <p>Basketball is a fantastic sport that can help people with various disabilities improve their physical fitness, build social connections, and boost their positive energy. Here are five disabilities where basketball can be particularly beneficial.</p>
+        </div>
+
+        <div class="flex-container">
+            <div class="info-section">
+                <h2>1. Wheelchair Users</h2>
+                <p>Wheelchair basketball offers an excellent opportunity for people in wheelchairs to improve their muscle strength and endurance. It also promotes teamwork and social interaction.</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Wheelchair+Basketball" alt="Wheelchair Basketball">
+                <div class="symbol">🏀</div>
+                <a href="wheelchair_users.html" class="button">Learn More</a>
             </div>
-            <div class="course-card">
-                <h3>Networking Fundamentals <i class="fas fa-network-wired"></i></h3>
-                <p>Understand the core concepts of networking.</p>
-                <a href="course-networking-fundamentals.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+
+            <div class="info-section">
+                <h2>2. Visual Impairments</h2>
+                <p>Basketball can help people with visual impairments improve their spatial orientation and motor skills. It also fosters confidence and independence.</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Visual+Impairments" alt="Basketball for Visual Impairments">
+                <div class="symbol">👀</div>
+                <a href="visual_impairments.html" class="button">Learn More</a>
             </div>
-            <div class="course-card">
-                <h3>Programming Basics <i class="fas fa-code"></i></h3>
-                <p>Get started with programming languages.</p>
-                <a href="course-programming-basics.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+
+            <div class="info-section">
+                <h2>3. Hearing Impairments</h2>
+                <p>For people with hearing impairments, basketball can help improve physical fitness and enhance communication skills through nonverbal signals and teamwork.</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Hearing+Impairments" alt="Basketball for Hearing Impairments">
+                <div class="symbol">👂</div>
+                <a href="hearing_impairments.html" class="button">Learn More</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 IT Specialist Training. All rights reserved.</p>
+
+            <div class="info-section">
+                <h2>4. Intellectual Disabilities</h2>
+                <p>People with intellectual disabilities benefit from the structure and social aspects of basketball. It helps promote cognitive skills and self-confidence.</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Intellectual+Disabilities" alt="Basketball for Intellectual Disabilities">
+                <div class="symbol">🧠</div>
+                <a href="intellectual_disabilities.html" class="button">Learn More</a>
+            </div>
+
+            <div class="info-section">
+                <h2>5. Autism</h2>
+                <p>Basketball can help people with autism improve their motor skills and promote social interactions in a structured and supportive environment.</p>
+                <img src="https://via.placeholder.com/300x200.png?text=Autism" alt="Basketball for Autism">
+                <div class="symbol">🧩</div>
+                <a href="autism.html" class="button">Learn More</a>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <a href="https://example.com/more-info" class="button">More Info</a>
+            <a href="https://example.com/contact" class="button">Contact</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Basketball for People with Disabilities. All rights reserved.</p>
     </footer>
 </body>
 </html>
